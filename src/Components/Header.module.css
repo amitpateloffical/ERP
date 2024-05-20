@@ -1,0 +1,28 @@
+/* src/components/Header.module.css */
+.header {
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+}
+
+.userInfo {
+    margin-right: 20px;
+}
+
+.languageSwitcher button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 16px;
+}
+    

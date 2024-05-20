@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: black; */
+  /* background-image: url(./loginbg.jpg); */
+  /* background-color: #3D52A0; */
+ background: #B993D6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover; /* Ensures the background image covers the whole container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.loginContainer {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  max-width: 900px;
+}
+
+.illustrationLeft,
+.illustrationRight {
+  /* background-color: #00D084; */
+  /* background-color: #7091e6;  */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.illustrationBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustrationImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.loginForm {
+  padding: 40px;
+  max-width: 400px;
+  flex: 1;
+  text-align: center;
+}
+
+.companyLogo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.loginForm h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #3d52a0;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.forgotPassword {
+  display: block;
+  margin-bottom: 20px;
+  /* color: #00D084; */
+  color: #3d52a0;
+  text-decoration: none;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  /* background-color: #00D084; */
+  background-color: #3d52a0;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.userTypeButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userTypeButton {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
