@@ -174,7 +174,6 @@
 // export default React.memo(Sidebar);
 
 // 4th
-
 import React, { useState, useCallback } from "react";
 import * as Icons from "react-icons/bi";
 import styles from "./Sidebar.module.css";
@@ -218,7 +217,9 @@ const Sidebar = () => {
           className={isChild ? (hasSubmenu ? styles.childWithSubmenu : styles.childLink) : ""}
         >
           <a
-            className={`nav-link ${styles.navItem} ${isActive ? styles.active : ""}`}
+            className={`nav-link ${styles.navItem} ${isActive ? styles.active : ""} ${
+              !hasSubmenu ? styles.noChild : ""
+            }`}
             onClick={() => {
               if (hasSubmenu) {
                 isChild ? toggleChildDropdown(parentTitle, link.title) : toggleDropdown(link.title);

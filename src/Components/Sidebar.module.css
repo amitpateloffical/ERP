@@ -43,7 +43,8 @@
 
 .navItem {
   padding: 10px;
-  color: #333;
+  color: #0f0f10 !important;
+  text-emphasis: 4;
   text-decoration: none; /* Remove default link underline */
   /* display: block; */
   display: flex !important;
@@ -63,6 +64,7 @@
 
 .childLink {
   padding-left: 30px; /* Indent child links */
+  /* display: block !important; */
 }
 
 .dropdownIcon {
@@ -82,8 +84,7 @@
 }
 
 .childWithSubmenu {
-  padding-left: 30px; /* Add indentation for child links with submenus */
-  /* font-weight: bold;  */
+  padding-left: 30px; 
 }
 
 .childWithSubmenu .navItem {
@@ -105,4 +106,8 @@
   background-color: #76b0ea; /* Highlight active item with a different color */
   /* color: #fff;  */
   /* Ensure text color is visible on the active background */
+}
+
+.noChild{
+    display:block !important;
 }
