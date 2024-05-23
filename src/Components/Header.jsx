@@ -12,7 +12,7 @@ const Header = () => {
         <div className={styles.languageSwitcher}>
           <button>English</button>
         </div>
-      </div>
+      </div>  
     </header>
   );
 };

@@ -1,8 +1,10 @@
 // src/LoginPage.jsx
 import React from "react";
 import styles from "./LoginPage.module.css";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <div className={styles.loginContainer}>
@@ -23,7 +25,14 @@ const LoginPage = () => {
           <a href="#" className={styles.forgotPassword}>
             Forgot your password?
           </a>
-          <button className={styles.loginButton}>Login</button>
+          <button
+            className={styles.loginButton}
+            onClick={() => {
+              navigate("/dashboard");
+            }}
+          >
+            Login
+          </button>
           <div className={styles.userTypeButtons}>
             <button className={styles.userTypeButton}>Company</button>
             <button className={styles.userTypeButton}>Client</button>
@@ -33,7 +42,7 @@ const LoginPage = () => {
         <div className={styles.illustrationRight}>
           <div className={styles.illustrationBox}>
             <img
-            //   src="https://img.freepik.com/free-vector/hand-drawn-flat-design-erp-illustration_23-2149383351.jpg?size=626&ext=jpg&ga=GA1.1.1849876919.1716179656&semt=sph"
+              //   src="https://img.freepik.com/free-vector/hand-drawn-flat-design-erp-illustration_23-2149383351.jpg?size=626&ext=jpg&ga=GA1.1.1849876919.1716179656&semt=sph"
               src="/loginRight.png"
               alt="Illustration"
               className={styles.illustrationImage}
