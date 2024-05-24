@@ -7,8 +7,12 @@ import {
   FaFileAlt,
   FaMoneyBillAlt,
   FaMoneyCheckAlt,
+  FaHandHoldingUsd,
+  FaMoneyBillWave,
+  FaWallet,
+  FaCashRegister,
 } from "react-icons/fa";
-    // import {FaUserTie, } from 'react-icons/fa'; /
+// import {FaUserTie, } from 'react-icons/fa'; /
 import { Padding } from "@mui/icons-material";
 import LineChart from "../../Components/Charts/Linechart";
 import BarChart from "../../Components/Charts/Barchart";
@@ -94,7 +98,7 @@ const Dashboard = () => {
         </div>
       </div>
       {/* Add more divs as needed */}
-  
+
       <div className={`${styles.rightColumn}`}>
         <h5>Income Vs Expense</h5>
         <div className={styles.IvEdiv}>
@@ -102,12 +106,13 @@ const Dashboard = () => {
             <div className={styles.leftIvEcard}>
               <span
                 style={{
-                  padding: "15%",
-                  backgroundColor: "#c06bd6",
+                  padding: "12%",
+                  // backgroundColor: "#c06bd6",
+                  backgroundColor: "green",
                   borderRadius: "23%",
                 }}
               >
-                <FaMoneyCheckAlt className={styles.icon} /> 
+                <FaHandHoldingUsd className={styles.icon} />
               </span>
             </div>
             <div className={styles.rightIvEcard}>
@@ -119,29 +124,31 @@ const Dashboard = () => {
             <div className={styles.leftIvEcard}>
               <span
                 style={{
-                  padding: "15%",
-                  backgroundColor: "#c06bd6",
+                  padding: "12%",
+                  // backgroundColor: "#c06bd6",
+                  backgroundColor: "#e06c28",
                   borderRadius: "23%",
                 }}
               >
-                <FaMoneyBillAlt className={styles.icon} /> {/* Changed icon */}
+                <FaMoneyBillWave className={styles.icon} /> {/* Changed icon */}
               </span>
             </div>
             <div className={styles.rightIvEcard}>
               <p>Expense Today</p>
-              <h6 className={styles.textGreen}>$ 0.00 </h6>
+              <h6 className={styles.textGreen1}>$ 0.00 </h6>
             </div>
           </div>
           <div className={styles.IvEcard}>
             <div className={styles.leftIvEcard}>
               <span
                 style={{
-                  padding: "15%",
-                  backgroundColor: "#c06bd6",
+                  padding: "12%",
+                  backgroundColor: "green",
+                  // backgroundColor: "#c06bd6",
                   borderRadius: "23%",
                 }}
               >
-                <FaMoneyCheckAlt className={styles.icon} /> {/* Changed icon */}
+                <FaWallet className={styles.icon} /> {/* Changed icon */}
               </span>
             </div>
             <div className={styles.rightIvEcard}>
@@ -153,17 +160,18 @@ const Dashboard = () => {
             <div className={styles.leftIvEcard}>
               <span
                 style={{
-                  padding: "15%",
-                  backgroundColor: "#c06bd6",
+                  padding: "12%",
+                  // backgroundColor: "#c06bd6",
+                  backgroundColor: "#e06c28",
                   borderRadius: "23%",
                 }}
               >
-                <FaMoneyBillAlt className={styles.icon} /> {/* Changed icon */}
+                <FaCashRegister className={styles.icon} /> {/* Changed icon */}
               </span>
             </div>
             <div className={styles.rightIvEcard}>
               <p>Expense This month</p>
-              <h6 className={styles.textGreen}>$ 0.00 </h6>
+              <h6 className={styles.textGreen1}>$ 0.00 </h6>
             </div>
           </div>
         </div>

@@ -149,7 +149,14 @@ h5 {
   margin: 0;
 }
 .textGreen {
-  color: purple;
+  /* color: purple; */
+  color: green;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.textGreen1 {
+  /* color: purple; */
+  color: #e06c28;
   font-size: 1.3rem;
   margin: 0;
 }
