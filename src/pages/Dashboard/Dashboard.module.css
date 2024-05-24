@@ -1,0 +1,290 @@
+/* .outlet {
+    padding: 20px;
+    background-color: #f0f0f0;
+    flex-grow: 1;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.graphs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.graph {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* Dashboard.module.css */
+
+/* Dashboard.module.css */
+/* Dashboard.module.css */
+
+/* Dashboard.module.css */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto; /* Set row heights to auto */
+  gap: 10px; /* Adjust gap as needed */
+  margin-bottom: 5%;
+}
+
+.leftColumn {
+  /* Styles for left column */
+  /* border: 1px solid black; Border to resemble card */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for content */
+  height: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.rightColumn {
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for content */
+  height: 300px;    
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+/* First Cards Div*/
+.cardDiv {
+  display: flex;
+  flex-direction: row;
+  /* gap: 4%; */
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.vertical_cards {
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for content */
+  height: 200px;
+  width: 20%;
+  margin-top: 5%;
+  box-shadow: 12px 14px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
+  transition: transform 0.3s ease;
+}
+
+.vertical_cards:hover {
+  transform: translateY(-10px); /* Move cards 10px up on hover */
+}
+
+.vertical_cards p {
+  margin-top: 15%;
+  text-align: center;
+}
+.vertical_cards h3 {
+  text-align: center;
+  color: blueviolet;
+}
+.vertical_cards h5 {
+  text-align: center;
+  color: blueviolet;
+  border: none;
+}
+.icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: white;
+  /* padding: 25%; */
+  /* background-color: aquamarine; */
+}
+
+/* Cashflow Chart Div */
+h5 {
+  /* text-decoration: ; */
+  color: rgb(173, 108, 233) !important;
+  text-align: left;
+  padding-left: 3%;
+  border-left: 5px solid greenyellow;
+}
+
+/* Income vs Expense Div */
+.IvEdiv {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3%;
+  margin-top: 4%;
+  /* transition: transform 0.3s ease; */
+}
+
+
+.IvEcard {
+  height: 100px;
+  display: flex;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.leftIvEcard {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightIvEcard {
+  /* background-color: rgb(185, 185, 154);   */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rightIvEcard p {
+  margin: 0;
+}
+.textGreen {
+  color: purple;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+/* TAbles */
+.dashboardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3%;
+  border: 1px solid #dddddd;
+}
+
+.dashboardTable th,
+.dashboardTable td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.dashboardTable th {
+  background-color: #f8f5f5;
+}
+
+.dashboardTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dashboardTable tr:hover {
+  background-color: #f2f2f2;
+}
+
+.dashboardTable tr:first-child th {
+  border-top: 0;
+}
+
+.dashboardTable tr:last-child td {
+  border-bottom: 0;
+}
+
+.dashboardTable tr td:first-child,
+.dashboardTable tr th:first-child {
+  border-left: 0;
+}
+
+.dashboardTable tr td:last-child,
+.dashboardTable tr th:last-child {
+  border-right: 0;
+}
+.tableContent {
+  padding: 15%;
+  padding-top: 0;
+  padding-bottom: 1%;
+  border-radius: 10px;
+  margin: 0;
+  color: white;
+  font-size: 0.9rem;
+}
+.statusTd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statusdraft {
+  background-color: grey;
+}
+.statusPaid {
+  background-color: rgb(146, 188, 83);
+}
+.statusPartiallypaid {
+  background-color: rgb(60, 152, 152);
+}
+
+.IncomebyCatDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.yearP {
+  font: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+.toggleheadingDiv {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  color: #76b0ea;
+}
+
+.toggleActive {
+  color: white;
+  background-color: #76b0ea;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.statisticsDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9%;
+  padding-right: 9%;
+  /* border-top: 2px solid black; */
+  border-bottom: 2px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.statisticsDivLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+.statisticsDivLeft p {
+  margin: 0;
+  font-size: larger;
+}
+.statisticsDivLeft pre {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.fullWidthContainer {
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for content */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  grid-column: span 2; /* Span across both columns */
+}
+
+.progress {
+  display: block;
+  border-bottom: 5px solid gray;
+  width: 170px;
+  padding: 2%;
+}
+.lineChartDiv{
+  max-height: 250px;
+  overflow-y: scroll;
+}

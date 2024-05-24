@@ -5,8 +5,9 @@ import "./App.css";
 import LoginPage from "./pages/LoginPage";
 import Sidebar from "./Components/Sidebar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import DashBoard from "./pages/DashBoard";
 import Layout from "./Components/Layout";
+import Dashboard from "./pages/Dashboard/DashBoard";
+import Linechart from "./Components/Charts/Linechart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,9 +20,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginPage />} />
-            <Route path="/dashboard" element={<Layout />}>
-              <Route index element={<DashBoard />} />
-            </Route>
+          <Route path="/dashboard" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="charts" element={<Linechart />} />
+          </Route>
         </Routes>
       </Router>
     </>

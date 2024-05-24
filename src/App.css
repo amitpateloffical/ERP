@@ -23,3 +23,25 @@ body{
   padding: 20px;
   background-color: #f4f4f4;
 }
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #69a9e9; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f8f9fa; /* Creates space around the thumb */
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a77c4; /* Change color when hovering */
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 16px; /* Width of the scrollbar */
+}

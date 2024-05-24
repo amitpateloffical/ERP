@@ -4,16 +4,13 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 
- 
 const Layout = () => {
   return (
-    <div style={{ display: "flex" } }>
-      <Sidebar
-        style={{ height: "100vh", position: "fixed", width: "250px" }}
-      />
+    <div style={{ display: "flex" }}>
+      <Sidebar style={{ height: "100vh", width: "350px" }} />
       <div style={{ marginLeft: "", width: "100%" }}>
-        <Header />
-        <main style={{ padding: "1rem" }}>
+        <Header style={{ marginLeft: "350px" }} />
+        <main style={{ padding: "1rem", marginLeft: "350px" }}>
           <Outlet />
         </main>
       </div>
