@@ -3,7 +3,6 @@ import "./App.css";
 import LoginPage from "./pages/LoginPage";
 import Layout from "./Components/Layout";
 import Dashboard from "./pages/Dashboard/Accounting/DashBoard";
-import Linechart from "./Components/Charts/Linechart";
 import AccountStatement from "./pages/Dashboard/Accounting/Reports/AccountStatement/AccountStatement";
 import InvoiceSummary from "./pages/Dashboard/Accounting/Reports/InvoiceSummary/InvoiceSummary";
 import SalesReport from "./pages/Dashboard/Accounting/Reports/SalesReport/SalesReport";

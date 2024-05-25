@@ -7,7 +7,7 @@
   border-right: 1px solid #dee2e6; /* Add a border on the right side */
   height: 99vh;
   overflow-y: scroll;
-  position: fixed;  
+  position: fixed;
 }
 
 /* Scrollbar track */
@@ -25,7 +25,7 @@
 
 /* Scrollbar thumb on hover */
 .sidebar::-webkit-scrollbar-thumb:hover {
-  background: #2a77c4; /* Change color when hovering */
+  background: #2a77c4;
 }
 
 /* Scrollbar width */
@@ -57,10 +57,10 @@
   background-color: #76b0ea; /* Darker hover effect */
 }
 
-.active {
-  background-color: #1abc9c;
-  color: #ecf0f1;
-}
+/* .active {
+    background-color: #1abc9c;
+    color: #ecf0f1;
+  } */
 
 .childLink {
   padding-left: 30px; /* Indent child links */
@@ -84,7 +84,7 @@
 }
 
 .childWithSubmenu {
-  padding-left: 30px; 
+  padding-left: 30px;
 }
 
 .childWithSubmenu .navItem {
@@ -102,12 +102,10 @@
 .childWithSubmenu:hover .navItem {
   background-color: #e9ecef;
 }
-.navItem.active {
-  background-color: #76b0ea; /* Highlight active item with a different color */
-  /* color: #fff;  */
-  /* Ensure text color is visible on the active background */
-}
+/* .navItem.active {
+  background-color: #76b0ea;
+} */
 
-.noChild{
-    display:block !important;
+.noChild {
+  display: block !important;
 }
