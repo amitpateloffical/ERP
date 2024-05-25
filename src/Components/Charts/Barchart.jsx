@@ -24,7 +24,8 @@ const BarChart = () => {
     },
   ];
 
-  return <ReactApexChart options={options} series={series} type="bar" height={400} />;
+  return <ReactApexChart options={options} series={series} type="bar" height={230} />;
 };
 
 export default BarChart;
+

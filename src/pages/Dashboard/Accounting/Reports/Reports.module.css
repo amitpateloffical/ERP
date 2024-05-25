@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.verticalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.item {
+  height: 70px;
+  width: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* padding: 5%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 3%;
+  box-sizing: border-box;
+}
+.item pre {
+  margin-bottom: 0;
+}
+
+/* Table */
+
+.dashboardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3%;
+  border: 1px solid #dddddd;
+}
+
+.dashboardTable th,
+.dashboardTable td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.dashboardTable th {
+  background-color: #f8f5f5;
+}
+
+.dashboardTable tr:nth-child(even) {
+  /* background-color: #f9f9f9; */
+}
+
+.dashboardTable tr:hover {
+  background-color: #f2f2f2;
+}
+
+.dashboardTable tr:first-child th {
+  border-top: 0;
+}
+
+.dashboardTable tr:last-child td {
+  border-bottom: 0;
+}
+
+.dashboardTable tr td:first-child,
+.dashboardTable tr th:first-child {
+  border-left: 0;
+}
+
+.dashboardTable tr td:last-child,
+.dashboardTable tr th:last-child {
+  border-right: 0;
+}
+.tableContent {
+  padding: 15%;
+  padding-top: 0;
+  padding-bottom: 1%;
+  border-radius: 10px;
+  margin: 0;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.tableBottom {
+  padding: 1%;
+}
+.tableTop {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.tableTopleft {
+  display: flex;
+  gap: 2%;
+  height: 30px;
+  width: max-content;
+}
+.tableTopleft select {
+  /* padding: 5%; */
+  width: max-content;
+}
+.tableTopleft p {
+  width: 300px;
+}
+.reportTableContainer {
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+  padding: 20px; /* Padding for content */
+}
+.textGreen {
+  /* color: purple; */
+  color: green;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.fullWidthContainer {
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for content */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  
+  margin-bottom: 2%;
+}

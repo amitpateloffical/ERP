@@ -1,0 +1,20 @@
+.toggleheadingDiv {
+  display: flex;
+  gap: 5%;
+  justify-content: left;
+  color: #76b0ea;
+  padding: 1%;
+}
+.toggleheadingDiv p {
+  padding-top: 1%;
+  cursor: pointer;
+}
+
+.toggleActive {
+  color: white;
+  background-color: #76b0ea;
+  padding: 1%;
+  border-radius: 10px;
+  /* font-weight: bold; */
+  /* border-bottom: 2px solid #000; */
+}

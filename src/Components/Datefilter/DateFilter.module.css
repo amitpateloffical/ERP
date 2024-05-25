@@ -1,0 +1,68 @@
+/* src/DateFilter.module.css */
+
+.dateFilter {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+  padding: 1%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px; /* Increase width */
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  padding: 5px;
+  font-size: 14px;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  color: #999;
+}
+
+.searchButton,
+.clearButton {
+  width: 40px; /* Increase button size */
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Increase icon size */
+  color: white;
+}
+
+.searchButton {
+  background-color: #00cc44;
+}
+
+.clearButton {
+  background-color: #ff6666;
+}

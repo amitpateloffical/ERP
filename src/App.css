@@ -45,3 +45,19 @@ body{
 ::-webkit-scrollbar {
   width: 16px; /* Width of the scrollbar */
 }
+
+
+/* reusable */
+.toggleheadingDiv {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  color: #76b0ea;
+}
+
+.toggleActive {
+  color: white;
+  background-color: #76b0ea;
+  padding: 1%;
+  border-radius: 10px;
+}

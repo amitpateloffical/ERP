@@ -14,10 +14,82 @@ import {
 } from "react-icons/fa";
 // import {FaUserTie, } from 'react-icons/fa'; /
 import { Padding } from "@mui/icons-material";
-import LineChart from "../../Components/Charts/Linechart";
-import BarChart from "../../Components/Charts/Barchart";
+import LineChart from "../../../Components/Charts/Linechart";
+import BarChart from "../../../Components/Charts/Barchart";
+import Tab from "../../../Components/Tabs/Tabs";
 
 const Dashboard = () => {
+  const InvoiceWeeklyContent = (
+    <div style={{ marginTop: "0%" }}>
+      <div className={styles.statisticsDiv}>
+        <div className={styles.statisticsDivLeft}>
+          <p>
+            <b>Total</b>
+          </p>
+          <pre>Bill Generated</pre>
+        </div>
+        <p className={styles.textGreen}>$ 0.00</p>
+      </div>
+      <div className={styles.statisticsDiv}>
+        <div className={styles.statisticsDivLeft}>
+          <p>
+            <b>Total</b>
+          </p>
+          <pre>Paid</pre>
+        </div>
+        <p className={styles.textGreen}>$ 0.00</p>
+      </div>
+      <div className={styles.statisticsDiv}>
+        <div className={styles.statisticsDivLeft}>
+          <p>
+            <b>Total</b>
+          </p>
+          <pre>Due</pre>
+        </div>
+        <p className={styles.textGreen}>$ 0.00</p>
+      </div>
+    </div>
+  );
+  const InvoiceMonthlyContent = (
+    <div style={{ marginTop: "0%" }}>
+      <div className={styles.statisticsDiv}>
+        <div className={styles.statisticsDivLeft}>
+          <p>
+            <b>Total</b>
+          </p>
+          <pre>Bill Generated</pre>
+        </div>
+        <p className={styles.textGreen}>$ 10.00</p>
+      </div>
+      <div className={styles.statisticsDiv}>
+        <div className={styles.statisticsDivLeft}>
+          <p>
+            <b>Total</b>
+          </p>
+          <pre>Paid</pre>
+        </div>
+        <p className={styles.textGreen}>$ 10.00</p>
+      </div>
+      <div className={styles.statisticsDiv}>
+        <div className={styles.statisticsDivLeft}>
+          <p>
+            <b>Total</b>
+          </p>
+          <pre>Due</pre>
+        </div>
+        <p className={styles.textGreen}>$ 10.00</p>
+      </div>
+    </div>
+  );
+
+  const tabs1 = [
+    { label: "Invoices Weekly Statistics", content: InvoiceWeeklyContent },
+    { label: "Invoices Monthly Statistics", content: InvoiceMonthlyContent },
+  ];
+  const tabs2 = [
+    { label: "Bills Weekly Statistics", content: InvoiceWeeklyContent },
+    { label: "Bills Monthly Statistics", content: InvoiceMonthlyContent },
+  ];
   return (
     <div className={styles.gridContainer}>
       <div className={styles.fullWidthContainer}>
@@ -395,11 +467,12 @@ const Dashboard = () => {
         </table>
       </div>
       <div className={styles.rightColumn}>
-        <div className={styles.toggleheadingDiv}>
+        <Tab tabs={tabs1} />
+        {/* <div className={styles.toggleheadingDiv}>
           <p className={styles.toggleActive}>Invoices Weekly Statistics</p>
           <p>Invoices Monthly Statistics</p>
-        </div>
-        <div style={{ marginTop: "0%" }}>
+        </div> */}
+        {/* <div style={{ marginTop: "0%" }}>
           <div className={styles.statisticsDiv}>
             <div className={styles.statisticsDivLeft}>
               <p>
@@ -427,11 +500,13 @@ const Dashboard = () => {
             </div>
             <p className={styles.textGreen}>$ 0.00</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div></div>
       <div className={styles.rightColumn}>
-        <div className={styles.toggleheadingDiv}>
+        <Tab tabs={tabs2} />
+
+        {/* <div className={styles.toggleheadingDiv}>
           <p className={styles.toggleActive}>Bills Weekly Statistics</p>
           <p>Bills Monthly Statistics</p>
         </div>
@@ -463,7 +538,7 @@ const Dashboard = () => {
             </div>
             <p className={styles.textGreen}>$ 0.00</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className={styles.fullWidthContainer}>
         <h5>Goal </h5>
