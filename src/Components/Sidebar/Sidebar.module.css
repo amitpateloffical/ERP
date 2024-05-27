@@ -57,10 +57,10 @@
   background-color: #76b0ea; /* Darker hover effect */
 }
 
-/* .active {
-    background-color: #1abc9c;
-    color: #ecf0f1;
-  } */
+.active {
+    /* background-color: #1abc9c; */
+    color: #1abc9c !important;
+  }
 
 .childLink {
   padding-left: 30px; /* Indent child links */
@@ -80,7 +80,7 @@
 .dropdown {
   background-color: #f1f1f1; /* Background color for dropdown menu */
   padding-left: 20px; /* Add indentation for dropdown links */
-  border-left: 2px solid #1abc9c; /* Border to highlight nested dropdowns */
+  border-left: 2px solid #1abc9c;
 }
 
 .childWithSubmenu {
@@ -102,9 +102,9 @@
 .childWithSubmenu:hover .navItem {
   background-color: #e9ecef;
 }
-/* .navItem.active {
+.navItem .active {
   background-color: #76b0ea;
-} */
+}
 
 .noChild {
   display: block !important;

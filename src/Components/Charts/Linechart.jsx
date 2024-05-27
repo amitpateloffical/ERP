@@ -42,6 +42,7 @@
       },
       height: "100%",
       colors: ["#77B6EA", "#545454"],
+      // colors: ["#2dc254", "#FF0000"],
     };
 
     const series = [
