@@ -1,7 +1,38 @@
 import React from "react";
 import DateFilter from "../../../../../Components/Datefilter/Datefilter";
 import styles from "../Reports.module.css";
-// import styles from "./AccountStatement.module.css";
+
+const accountStatements = [
+  {
+    date: "Jan 07, 2024",
+    amount: "$ 500,00",
+    description: "Small Description",
+  },
+  {
+    date: "Jan 29, 2024",
+    amount: "$ 9900,00",
+    description: "Description",
+  },
+  {
+    date: "Apr 27, 2024",
+    amount: "$ 500,000",
+    description: "Test Description",
+  },
+  {
+    date: "Dec 11, 2024",
+    amount: "$ 1500,00",
+    description: "More Description",
+  },
+];
+
+const AccountRow = ({ statement }) => (
+  <tr>
+    <td>{statement.date}</td>
+    <td>{statement.amount}</td>
+    <td>{statement.description}</td>
+  </tr>
+);
+
 export default function AccountStatement() {
   return (
     <div className={styles.container}>
@@ -76,35 +107,22 @@ export default function AccountStatement() {
           </div>
           <table className={styles.dashboardTable}>
             <thead>
-              <th>Date</th>
-              <th>Amount </th>
-              <th>Description</th>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Description</th>
+              </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Jan 07 ,2024</td>
-                <td> $ 500,00</td>
-                <td>Small Description</td>
-              </tr>
-              <tr>
-                <td>Jan 29 ,2024</td>
-                <td> $ 9900,00</td>
-                <td> Description</td>
-              </tr>
-              <tr>
-                <td>Apr 27 ,2024</td>
-                <td> $ 500,000</td>
-                <td>Test Description</td>
-              </tr>
-              <tr>
-                <td>Dec 11 ,2024</td>
-                <td> $ 1500,00</td>
-                <td>More Description</td>
-              </tr>
+              {accountStatements.map((statement, index) => (
+                <AccountRow key={index} statement={statement} />
+              ))}
             </tbody>
           </table>
           <div className={styles.tableBottom}>
-            <p>Showing 1 to 5 of 5 entries</p>
+            <p>
+              Showing 1 to {accountStatements.length} of {accountStatements.length} entries
+            </p>
           </div>
         </div>
       </div>
