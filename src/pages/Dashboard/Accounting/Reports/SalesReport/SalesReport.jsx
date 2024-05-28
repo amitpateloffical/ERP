@@ -31,34 +31,34 @@ export default function SalesReport() {
         </thead>
         <tbody>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Refrigerator </td>
+            <td>6</td>
+            <td>$ 569.000,00</td>
+            <td>$ 46.500,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Recreation </td>
+            <td>24</td>
+            <td>$ 452.000,00</td>
+            <td>$ 46.500,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Shrugs </td>
+            <td>3</td>
+            <td>$ 159.000,00</td>
+            <td>$ 46.500,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Headphone </td>
+            <td>7</td>
+            <td>$ 959.000,00</td>
+            <td>$ 46.500,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Purse </td>
+            <td>11</td>
+            <td>$ 4.000,00</td>
+            <td>$ 4.500,00</td>
           </tr>
         </tbody>
       </table>
@@ -95,34 +95,34 @@ export default function SalesReport() {
         </thead>
         <tbody>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Keire </td>
+            <td>2</td>
+            <td>$ 271.500,00</td>
+            <td>$ 312.225,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Protiong</td>
+            <td>3</td>
+            <td> $ 199.500,00</td>
+            <td>$ 271.500,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Carla Chambers </td>
+            <td>5</td>
+            <td> $ 199.500,00</td>
+            <td> $ 3.825,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Preston Watkins </td>
+            <td>59</td>
+            <td> $ 199.500,00</td>
+            <td> $ 3.825,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>Mariko Gonzales </td>
+            <td>11</td>
+            <td> $ 199.500,00</td>
+            <td> $ 3.825,00</td>
           </tr>
         </tbody>
       </table>

@@ -25,6 +25,12 @@
   margin: 1rem 0;
 }
 
+.redirectMessage {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
 .homeLink {
   margin-top: 1rem;
   padding: 0.5rem 1rem;

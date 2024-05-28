@@ -1,7 +1,7 @@
 // src/DateFilter.js
 
 import React, { useEffect, useState } from "react";
-import { FaCalendarAlt, FaSearch, FaTimes } from "react-icons/fa";
+import {  FaSearch, FaTimes } from "react-icons/fa";
 import styles from "./DateFilter.module.css";
 
 const DateFilter = () => {

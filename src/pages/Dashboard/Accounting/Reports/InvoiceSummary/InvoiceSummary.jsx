@@ -39,59 +39,79 @@ export default function InvoiceSummary() {
         </thead>
         <tbody>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>
+              <p className={styles.employeeID}>#GAU7879</p>
+            </td>
+            <td>Jan 7, 2024 </td>
+            <td>Protiong </td>
+            <td>Maintenance Sales</td>
+            <td className={styles.statusTd}>
+              <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
+            </td>
+            <td>$ 204.504,00</td>
+            <td>$ 4.221,00</td>
+            <td> </td>
+            <td>$ 208.725,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>
+              <p className={styles.employeeID}>#GAU7879</p>
+            </td>
+            <td>Jan 7, 2024 </td>
+            <td>Protiong </td>
+            <td>Maintenance Sales</td>
+            <td className={styles.statusTd}>
+              <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
+            </td>
+            <td>$ 204.504,00</td>
+            <td>$ 4.221,00</td>
+            <td> </td>
+            <td>$ 208.725,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>
+              <p className={styles.employeeID}>#GAU7879</p>
+            </td>
+            <td>Jan 7, 2024 </td>
+            <td>Protiong </td>
+            <td>Maintenance Sales</td>
+            <td className={styles.statusTd}>
+              <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
+            </td>
+            <td>$ 204.504,00</td>
+            <td>$ 4.221,00</td>
+            <td> </td>
+            <td>$ 208.725,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>
+              <p className={styles.employeeID}>#GAU7879</p>
+            </td>
+            <td>Jan 7, 2024 </td>
+            <td>Protiong </td>
+            <td>Maintenance Sales</td>
+            <td className={styles.statusTd}>
+              <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
+            </td>
+            <td>$ 204.504,00</td>
+            <td>$ 4.221,00</td>
+            <td> </td>
+            <td>$ 208.725,00</td>
           </tr>
           <tr>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
-            <td>content</td>
+            <td>
+              <p className={styles.employeeID}>#GAU7879</p>
+            </td>
+            <td>Jan 7, 2024 </td>
+            <td>Protiong </td>
+            <td>Maintenance Sales</td>
+            <td className={styles.statusTd}>
+              <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
+            </td>
+            <td>$ 204.504,00</td>
+            <td>$ 4.221,00</td>
+            <td> </td>
+            <td>$ 208.725,00</td>
           </tr>
         </tbody>
       </table>

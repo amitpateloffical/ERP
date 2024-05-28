@@ -17,14 +17,17 @@ import IncomeSummary from "./pages/Dashboard/Accounting/Reports/IncomeSummary/In
 import ExpenseSummary from "./pages/Dashboard/Accounting/Reports/ExpenseSummary/ExpenseSummary";
 import IncomeVsExpense from "./pages/Dashboard/Accounting/Reports/IncomeVsExpense/IncomeVsExpense";
 import TaxSummary from "./pages/Dashboard/Accounting/Reports/TaxSummary/TaxSummary";
-import Overview from "./pages/Dashboard/HRM/Overview";
+import Overview from "./pages/Dashboard/HRM/Overview/Overview";
+import Payroll from "./pages/Dashboard/HRM/Reports/Payroll/Payroll";
+import Leave from "./pages/Dashboard/HRM/Reports/Leave/Leave";
+import MonthlyAttendance from "./pages/Dashboard/HRM/Reports/MonthlyAttendance/MonthlyAttendance";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/dashboard" element={<Layout />}>    
+        <Route path="/dashboard" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="accounting/reports">
             <Route path="account-statement" element={<AccountStatement />} />
@@ -43,6 +46,11 @@ function App() {
           </Route>
           <Route path="hrm">
             <Route path="overview" element={<Overview />} />
+            <Route path="reports">
+              <Route path="payroll" element={<Payroll />} />
+              <Route path="leave" element={<Leave />} />
+              <Route path="monthly-attendance" element={<MonthlyAttendance />} />
+            </Route>
           </Route>
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}

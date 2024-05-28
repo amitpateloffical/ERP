@@ -124,6 +124,37 @@
   border-radius: 5px; /* Rounded corners */
   padding: 20px; /* Padding for content */
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 2%;
+}
+
+.employeeID {
+  border: 2px solid #6fd943;
+  padding: 1%;
+  color: #6fd943;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.employeeID :hover {
+  color: white;
+  background-color: #6fd943;
+}
+
+.statusTd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statusdraft {
+  background-color: grey;
+}
+.statusPaid {
+  background-color: rgb(146, 188, 83);
+}
+.statusPartiallypaid {
+  background-color: rgb(60, 152, 152);
 }

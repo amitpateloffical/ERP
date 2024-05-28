@@ -258,24 +258,24 @@ const Dashboard = () => {
           </thead>
           <tbody>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td></td>
+              <td>Cash </td>
+              <td>$ 2.451.297,51</td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>ROUNDBANK </td>
+              <td>Benjamin Adams</td>
+              <td> $ -31.199,40</td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>COBIZ BANK </td>
+              <td>Chisom Latifat </td>
+              <td>$ 68.173,00</td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>US BANK, NA </td>
+              <td>Earl Hane MD</td>
+              <td>$ -939.007,00</td>
             </tr>
           </tbody>
         </table>
@@ -296,85 +296,24 @@ const Dashboard = () => {
           </thead>
           <tbody>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>Jan 7, 2024 </td>
+              <td>Ida F. Mullen</td>
+              <td>$ 500,00</td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>Jan 31, 2024 </td>
+              <td>Keire</td>
+              <td>$ 100,00</td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>Jan 4, 2024 </td>
+              <td>Protiong</td>
+              <td>$ 5.000,00</td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div className={styles.rightColumn}>
-        <div className={styles.IncomebyCatDiv}>
-          <h5>Expense by Category </h5>
-          <p className={styles.yearP}>Year - 2024</p>
-        </div>
-      </div>
-      <div className={styles.leftColumn}>
-        <h5>Recent Invoices</h5>
-        <table className={styles.dashboardTable}>
-          <thead>
-            <th>#</th>
-            <th>Vendor</th>
-            <th>Bill Date</th>
-            <th>Due Date</th>
-            <th>Amount</th>
-            <th>Status</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusPaid}`}>content</p>{" "}
-              </td>
-            </tr>
-            <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusPartiallypaid}`}>content</p>{" "}
-              </td>
-            </tr>
-            <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusdraft}`}>content</p>{" "}
-              </td>
-            </tr>
-            <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusPartiallypaid}`}>content</p>{" "}
-              </td>
+              <td>Jan 28, 2024 </td>
+              <td>Protiong</td>
+              <td>$ 5.000,00</td>
             </tr>
           </tbody>
         </table>
@@ -411,6 +350,114 @@ const Dashboard = () => {
           </tbody>
         </table>
       </div>
+      {/* <div className={styles.rightColumn}>
+        <div className={styles.IncomebyCatDiv}>
+          <h5>Expense by Category </h5>
+          <p className={styles.yearP}>Year - 2024</p>
+        </div>
+      </div> */}
+      <div className={styles.leftColumn}>
+        <h5>Recent Invoices</h5>
+        <table className={styles.dashboardTable}>
+          <thead>
+            <th>#</th>
+            <th>Customer</th>
+            <th>Bill Date</th>
+            <th>Due Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Keire</td>
+              <td>May 28, 2024 </td>
+              <td>Jan 15, 2024 </td>
+              <td>$ 208.725,00 </td>
+              <td className={styles.statusTd}>
+                <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Protiong</td>
+              <td>Jul 21, 2024 </td>
+              <td>Jan 15, 2024 </td>
+              <td>$ 308.725,00 </td>
+              <td className={styles.statusTd}>
+                <p className={`${styles.tableContent} ${styles.statusPartiallypaid}`}>
+                  Partially Paid
+                </p>{" "}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Preston Watkins</td>
+              <td>Jan 28, 2024 </td>
+              <td>Mar 22, 2024 </td>
+              <td>$ 08.725,00 </td>
+              <td className={styles.statusTd}>
+                <p className={`${styles.tableContent} ${styles.statusdraft}`}>draft</p>{" "}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Mariko Gonzales</td>
+              <td>Dec 17, 2024 </td>
+              <td>Apr 30, 2024 </td>
+              <td>$ 208.725,00 </td>
+              <td className={styles.statusTd}>
+                <p className={`${styles.tableContent} ${styles.statusPartiallypaid}`}>
+                  Partially Paid
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {/* <div className={styles.rightColumn}>
+        <h5>Latest Expense</h5>
+        <table className={styles.dashboardTable}>
+          <thead>
+            <th>Date</th>
+            <th>Vendor</th>
+            <th>Amount Due</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>content</td>
+              <td>content</td>
+              <td>content</td>
+            </tr>
+            <tr>
+              <td>content</td>
+              <td>content</td>
+              <td>content</td>
+            </tr>
+            <tr>
+              <td>content</td>
+              <td>content</td>
+              <td>content</td>
+            </tr>
+            <tr>
+              <td>content</td>
+              <td>content</td>
+              <td>content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> */}
+      <div className={styles.rightColumn}>
+        <Tab tabs={tabs2} />
+      </div>
       <div className={styles.leftColumn}>
         <h5>Recent Bills</h5>
         <table className={styles.dashboardTable}>
@@ -424,43 +471,51 @@ const Dashboard = () => {
           </thead>
           <tbody>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Wesley Zimmerman</td>
+              <td>May 28, 2024 </td>
+              <td>Jan 15, 2024 </td>
+              <td>$ 208.725,00 </td>
               <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusPaid}`}>content</p>{" "}
+                <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
               </td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Anthony B Renfroe</td>
+              <td>Jul 21, 2024 </td>
+              <td>Jan 15, 2024 </td>
+              <td>$ 308.725,00 </td>
               <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusPartiallypaid}`}>content</p>{" "}
+                <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
               </td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td>Preston Watkins</td>
+              <td>Jan 28, 2024 </td>
+              <td>Mar 22, 2024 </td>
+              <td>$ 08.725,00 </td>
               <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusdraft}`}>content</p>{" "}
+                <p className={`${styles.tableContent} ${styles.statusPaid}`}>Paid</p>{" "}
               </td>
             </tr>
             <tr>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
-              <td>content</td>
+              <td>
+                <p className={styles.employeeID}>#GAU7879</p>
+              </td>
+              <td> Kim J Gibson</td>
+              <td>Dec 17, 2024 </td>
+              <td>Apr 30, 2024 </td>
+              <td>$ 208.725,00 </td>
               <td className={styles.statusTd}>
-                <p className={`${styles.tableContent} ${styles.statusPartiallypaid}`}>content</p>{" "}
+                <p className={`${styles.tableContent} ${styles.statusdraft}`}>Draft</p>
               </td>
             </tr>
           </tbody>
@@ -503,43 +558,9 @@ const Dashboard = () => {
         </div> */}
       </div>
       <div></div>
-      <div className={styles.rightColumn}>
+      {/* <div className={styles.rightColumn}>
         <Tab tabs={tabs2} />
-
-        {/* <div className={styles.toggleheadingDiv}>
-          <p className={styles.toggleActive}>Bills Weekly Statistics</p>
-          <p>Bills Monthly Statistics</p>
-        </div>
-        <div style={{ marginTop: "0%" }}>
-          <div className={styles.statisticsDiv}>
-            <div className={styles.statisticsDivLeft}>
-              <p>
-                <b>Total</b>
-              </p>
-              <pre>Bill Generated</pre>
-            </div>
-            <p className={styles.textGreen}>$ 0.00</p>
-          </div>
-          <div className={styles.statisticsDiv}>
-            <div className={styles.statisticsDivLeft}>
-              <p>
-                <b>Total</b>
-              </p>
-              <pre>Paid</pre>
-            </div>
-            <p className={styles.textGreen}>$ 0.00</p>
-          </div>
-          <div className={styles.statisticsDiv}>
-            <div className={styles.statisticsDivLeft}>
-              <p>
-                <b>Total</b>
-              </p>
-              <pre>Due</pre>
-            </div>
-            <p className={styles.textGreen}>$ 0.00</p>
-          </div>
-        </div> */}
-      </div>
+      </div> */}
       <div className={styles.fullWidthContainer}>
         <h5>Goal </h5>
         <div style={{ marginTop: "0%" }}>
@@ -579,13 +600,13 @@ const Dashboard = () => {
             <div className={styles.statisticsDivLeft}>
               <pre>Name</pre>
               <p>
-                <b>Bill Goal</b>
+                <b>Invoice Goal</b>
               </p>
             </div>
             <div className={styles.statisticsDivLeft}>
               <pre>Type</pre>
               <p>
-                <b>Bill</b>
+                <b>Invoice</b>
               </p>
             </div>
             <div className={styles.statisticsDivLeft}>
@@ -611,13 +632,13 @@ const Dashboard = () => {
             <div className={styles.statisticsDivLeft}>
               <pre>Name</pre>
               <p>
-                <b>Bill Goal</b>
+                <b>Payment Goal</b>
               </p>
             </div>
             <div className={styles.statisticsDivLeft}>
               <pre>Type</pre>
               <p>
-                <b>Bill</b>
+                <b>Payment</b>
               </p>
             </div>
             <div className={styles.statisticsDivLeft}>
@@ -643,13 +664,13 @@ const Dashboard = () => {
             <div className={styles.statisticsDivLeft}>
               <pre>Name</pre>
               <p>
-                <b>Bill Goal</b>
+                <b>Revenue Goal</b>
               </p>
             </div>
             <div className={styles.statisticsDivLeft}>
               <pre>Type</pre>
               <p>
-                <b>Bill</b>
+                <b>Revenue</b>
               </p>
             </div>
             <div className={styles.statisticsDivLeft}>

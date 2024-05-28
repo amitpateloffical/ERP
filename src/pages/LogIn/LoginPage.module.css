@@ -4,17 +4,16 @@
   align-items: center;
   height: 100vh;
   /* background-color: black; */
-  /* background-image: url(./loginbg.jpg); */
-  /* background-color: #3D52A0; */
-  background: #b993d6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #8ca6db, #b993d6); /* Chrome 10-25, Safari 5.1-6 */
+  /* background-image: url(./loginbg2.jpg); */
+  background-color: #3D52A0;
+  /* background: #b993d6; 
+  background: -webkit-linear-gradient(to right, #8ca6db, #b993d6);
   background: linear-gradient(
     to right,
     #8ca6db,
     #b993d6
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  );  */
+background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   background-size: cover; /* Ensures the background image covers the whole container */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
@@ -105,6 +104,8 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  gap: 2%;
+
 }
 
 .userTypeButton {

@@ -80,6 +80,7 @@
   margin-top: 5%;
   box-shadow: 12px 14px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
   transition: transform 0.3s ease;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .vertical_cards:hover {
@@ -212,7 +213,7 @@ h5 {
   border-radius: 10px;
   margin: 0;
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .statusTd {
   display: flex;
@@ -268,6 +269,7 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 3%;
+  width: auto;
 }
 .statisticsDivLeft p {
   margin: 0;
@@ -294,4 +296,24 @@ h5 {
 .lineChartDiv{
   max-height: 250px;
   overflow-y: scroll;
+}
+
+
+
+
+
+.employeeID {
+  border: 2px solid #6fd943;
+  padding: 1%;
+  color: #6fd943;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.employeeID :hover {
+  color: white;
+  background-color: #6fd943;
 }

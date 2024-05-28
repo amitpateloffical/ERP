@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../Reports.module.css";
 import Tab from "../../../../../Components/Tabs/Tabs";
 export default function Receivables() {
-  const salesbyItemTabContent = (
+  const CustomerBalance = (
     <div className={styles.reportTableContainer}>
       <div className={styles.tableTop}>
         <div className={styles.tableTopleft}>
@@ -21,10 +21,10 @@ export default function Receivables() {
       <table className={styles.dashboardTable}>
         <thead>
           <tr>
-            <th>INVOICE ITEM</th>
-            <th>QUANTITY SOLD </th>
-            <th>AMOUNT </th>
-            <th>AVERAGE PRICE</th>
+            <th>CUSTOMER NAME </th>
+            <th>INVOICE BALANCE </th>
+            <th>AVAILABLE CREDITS </th>
+            <th>BALANCE</th>
           </tr>
         </thead>
         <tbody>
@@ -66,7 +66,7 @@ export default function Receivables() {
     </div>
   );
 
-  const salesbyCustomerTabContent = (
+  const ReceivableSummary = (
     <div className={styles.reportTableContainer}>
       <div className={styles.tableTop}>
         <div className={styles.tableTopleft}>
@@ -131,11 +131,11 @@ export default function Receivables() {
   );
 
   const tabs = [
-    { label: "Customer Balance", content: salesbyItemTabContent },
-    { label: "Receivable Summary ", content: salesbyCustomerTabContent },
-    { label: "Receivable Details ", content: salesbyCustomerTabContent },
-    { label: "Aging Summary ", content: salesbyCustomerTabContent },
-    { label: "Aging Details ", content: salesbyCustomerTabContent },
+    { label: "Customer Balance", content: CustomerBalance },
+    { label: "Receivable Summary ", content: ReceivableSummary },
+    { label: "Receivable Details ", content: CustomerBalance },
+    { label: "Aging Summary ", content: ReceivableSummary },
+    { label: "Aging Details ", content: CustomerBalance },
   ];
 
   return (

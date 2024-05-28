@@ -82,24 +82,24 @@ export default function AccountStatement() {
             </thead>
             <tbody>
               <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
+                <td>Jan 07 ,2024</td>
+                <td> $ 500,00</td>
+                <td>Small Description</td>
               </tr>
               <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
+                <td>Jan 29 ,2024</td>
+                <td> $ 9900,00</td>
+                <td> Description</td>
               </tr>
               <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
+                <td>Apr 27 ,2024</td>
+                <td> $ 500,000</td>
+                <td>Test Description</td>
               </tr>
               <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
+                <td>Dec 11 ,2024</td>
+                <td> $ 1500,00</td>
+                <td>More Description</td>
               </tr>
             </tbody>
           </table>
