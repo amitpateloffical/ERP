@@ -21,6 +21,10 @@ import Overview from "./pages/Dashboard/HRM/Overview/Overview";
 import Payroll from "./pages/Dashboard/HRM/Reports/Payroll/Payroll";
 import Leave from "./pages/Dashboard/HRM/Reports/Leave/Leave";
 import MonthlyAttendance from "./pages/Dashboard/HRM/Reports/MonthlyAttendance/MonthlyAttendance";
+import CrmOverview from "./pages/Dashboard/CRM/Overview/CrmOverview";
+import Leads from "./pages/Dashboard/CRM/Reports/Leads/Leads";
+import Deals from "./pages/Dashboard/CRM/Reports/Deals/Deals";
+import Project from "./pages/Dashboard/Project/Project";
 
 function App() {
   return (
@@ -52,6 +56,14 @@ function App() {
               <Route path="monthly-attendance" element={<MonthlyAttendance />} />
             </Route>
           </Route>
+          <Route path="crm">
+            <Route path="overview" element={<CrmOverview />} />
+            <Route path="reports">
+              <Route path="lead" element={<Leads />} />
+              <Route path="deal" element={<Deals />} />
+            </Route>
+          </Route>
+          <Route path="project" element={<Project />}></Route>
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
       </Routes>

@@ -1,8 +1,47 @@
 import React from "react";
 import DateFilter from "../../../../../Components/Datefilter/Datefilter";
 import styles from "../Reports.module.css";
-// import styles from "./AccountStatement.module.css";
+
 export default function ProductStock() {
+  // Pseudo data for the table
+  const productStockData = [
+    {
+      date: "2024-05-01",
+      productName: "Laptop",
+      quantity: 50,
+      type: "Electronics",
+      description: "Dell Inspiron 15",
+    },
+    {
+      date: "2024-05-02",
+      productName: "Office Chair",
+      quantity: 150,
+      type: "Furniture",
+      description: "Ergonomic Office Chair",
+    },
+    {
+      date: "2024-05-03",
+      productName: "Smartphone",
+      quantity: 200,
+      type: "Electronics",
+      description: "Samsung Galaxy S21",
+    },
+    {
+      date: "2024-05-04",
+      productName: "Desk",
+      quantity: 75,
+      type: "Furniture",
+      description: "Adjustable Height Desk",
+    },
+    {
+      date: "2024-05-05",
+      productName: "Monitor",
+      quantity: 120,
+      type: "Electronics",
+      description: "LG UltraWide Monitor",
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.fullWidthContainer}>
@@ -26,59 +65,30 @@ export default function ProductStock() {
           </div>
           <table className={styles.dashboardTable}>
             <thead>
-              <th>DATE </th>
-              <th>PRODUCT NAME</th>
-              <th>QUANTITY </th>
-              <th>TYPE </th>
-              <th>DESCRIPTION </th>
+              <tr>
+                <th>DATE</th>
+                <th>PRODUCT NAME</th>
+                <th>QUANTITY</th>
+                <th>TYPE</th>
+                <th>DESCRIPTION</th>
+              </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
+              {productStockData.map((product, index) => (
+                <tr key={index}>
+                  <td>{product.date}</td>
+                  <td>{product.productName}</td>
+                  <td>{product.quantity}</td>
+                  <td>{product.type}</td>
+                  <td>{product.description}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
           <div className={styles.tableBottom}>
-            <p>Showing 1 to 5 of 5 entries</p>
+            <p>
+              Showing 1 to {productStockData.length} of {productStockData.length} entries
+            </p>
           </div>
         </div>
       </div>

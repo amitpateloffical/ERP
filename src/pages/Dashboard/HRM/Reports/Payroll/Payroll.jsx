@@ -15,6 +15,49 @@ export default function Payroll() {
     setCurrentMonth(`${year}-${month}`);
   }, []);
 
+  const payrollData = [
+    {
+      employeeId: "#GAU7879",
+      employee: "Gaurav Meena",
+      salary: "$3,000.00",
+      netSalary: "$2,800.00",
+      month: "May-2024",
+      status: "paid",
+    },
+    {
+      employeeId: "#PAN8923",
+      employee: "Pankaj Jat",
+      salary: "$2,500.00",
+      netSalary: "$2,300.00",
+      month: "May-2024",
+      status: "paid",
+    },
+    {
+      employeeId: "#MAY6452",
+      employee: "Mayank",
+      salary: "$4,000.00",
+      netSalary: "$3,800.00",
+      month: "May-2024",
+      status: "paid",
+    },
+    {
+      employeeId: "#RIT5673",
+      employee: "Ritika Sharma",
+      salary: "$3,200.00",
+      netSalary: "$3,000.00",
+      month: "May-2024",
+      status: "paid",
+    },
+    {
+      employeeId: "#NEH9874",
+      employee: "Neha Gupta",
+      salary: "$3,500.00",
+      netSalary: "$3,300.00",
+      month: "May-2024",
+      status: "unpaid",
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.fullWidthContainer}>
@@ -24,7 +67,6 @@ export default function Payroll() {
         <div className={styles.dateFilter}>
           <div className={styles.field}>
             <label>Frequency</label>
-
             <div className={styles.radioGroup}>
               <input
                 type="radio"
@@ -56,11 +98,10 @@ export default function Payroll() {
               </div>
             </div>
           )}
-
-          {typeMonth || (
+          {!typeMonth && (
             <div className={styles.field}>
               <label>Year</label>
-              <select>
+              <select defaultValue="2024">
                 <option>2017</option>
                 <option>2018</option>
                 <option>2019</option>
@@ -68,14 +109,13 @@ export default function Payroll() {
                 <option>2021</option>
                 <option>2022</option>
                 <option>2023</option>
-                <option selected>2024</option>
+                <option>2024</option>
                 <option>2025</option>
                 <option>2026</option>
                 <option>2027</option>
               </select>
             </div>
           )}
-
           <div className={styles.field}>
             <label>Branch</label>
             <select>
@@ -107,7 +147,7 @@ export default function Payroll() {
               <option>Select Employee</option>
               <option>Gaurav Meena</option>
               <option>Pankaj Jat</option>
-              <option>Mayank </option>
+              <option>Mayank</option>
             </select>
           </div>
           <button className={styles.searchButton}>
@@ -136,25 +176,25 @@ export default function Payroll() {
         <div className={styles.item}>
           <pre>Total Basic Salary : </pre>
           <p>
-            <b>$ 1.151.000,00</b>
+            <b>$1,151,000.00</b>
           </p>
         </div>
         <div className={styles.item}>
           <pre>Total Net Salary : </pre>
           <p>
-            <b>$ 1.167.500,00</b>
+            <b>$1,167,500.00</b>
           </p>
         </div>
         <div className={styles.item}>
           <pre>Total Allowance : </pre>
           <p>
-            <b>$ 15.100,00</b>
+            <b>$15,100.00</b>
           </p>
         </div>
         <div className={styles.item}>
           <pre>Total Commission : </pre>
           <p>
-            <b>$ 3.000,00</b>
+            <b>$3,000.00</b>
           </p>
         </div>
       </div>
@@ -162,29 +202,28 @@ export default function Payroll() {
         <div className={styles.item}>
           <pre>Total Loan : </pre>
           <p>
-            <b>$ 1.600,00</b>
+            <b>$1,600.00</b>
           </p>
         </div>
         <div className={styles.item}>
           <pre>Total Saturation Deduction : </pre>
           <p>
-            <b>$ 0,00</b>
+            <b>$0.00</b>
           </p>
         </div>
         <div className={styles.item}>
           <pre>Total Other Payment : </pre>
           <p>
-            <b>$ 0,00</b>
+            <b>$0.00</b>
           </p>
         </div>
         <div className={styles.item}>
           <pre>Total Overtime : </pre>
           <p>
-            <b>$ 0,00</b>
+            <b>$0.00</b>
           </p>
         </div>
       </div>
-
       <div className={styles.fullWidthContainer}>
         <div className={styles.reportTableContainer}>
           <div className={styles.tableTop}>
@@ -203,80 +242,38 @@ export default function Payroll() {
           </div>
           <table className={styles.dashboardTable}>
             <thead>
-              <th>EMPLOYEE ID </th>
-              <th>EMPLOYEE </th>
-              <th>SALARY </th>
-              <th>NET SALARY </th>
-              <th>MONTH </th>
-              <th>STATUS </th>
+              <tr>
+                <th>EMPLOYEE ID</th>
+                <th>EMPLOYEE</th>
+                <th>SALARY</th>
+                <th>NET SALARY</th>
+                <th>MONTH</th>
+                <th>STATUS</th>
+              </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>
-                  <p className={styles.unpaid}>unpaid</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
+              {payrollData.map((payroll, index) => (
+                <tr key={index}>
+                  <td>
+                    <p className={styles.employeeID}>{payroll.employeeId}</p>
+                  </td>
+                  <td>{payroll.employee}</td>
+                  <td>{payroll.salary}</td>
+                  <td>{payroll.netSalary}</td>
+                  <td>{payroll.month}</td>
+                  <td>
+                    <p className={payroll.status === "unpaid" ? styles.unpaid : styles.paid}>
+                      {payroll.status}
+                    </p>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
           <div className={styles.tableBottom}>
-            <p>Showing 1 to 5 of 5 entries</p>
+            <p>
+              Showing 1 to {payrollData.length} of {payrollData.length} entries
+            </p>
           </div>
         </div>
       </div>

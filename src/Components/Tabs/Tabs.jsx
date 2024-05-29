@@ -10,7 +10,9 @@ const Tab = ({ tabs }) => {
         {tabs.map((tab) => (
           <p
             key={tab.label}
-            className={activeTab === tab.label ? styles.toggleActive : ""}
+            className={`${
+              activeTab === tab.label ? styles.toggleActive : styles.inactiveTab
+            } `}
             onClick={() => setActiveTab(tab.label)}
           >
             {tab.label}

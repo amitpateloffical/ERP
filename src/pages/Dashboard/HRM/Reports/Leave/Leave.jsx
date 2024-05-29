@@ -15,6 +15,44 @@ export default function Leave() {
     setCurrentMonth(`${year}-${month}`);
   }, []);
 
+  const leaveData = [
+    {
+      employeeId: "#GAU7879",
+      employee: "Gaurav Meena",
+      approvedLeaves: 2,
+      rejectedLeaves: 1,
+      pendingLeaves: 0,
+    },
+    {
+      employeeId: "#PAN8923",
+      employee: "Pankaj Jat",
+      approvedLeaves: 1,
+      rejectedLeaves: 0,
+      pendingLeaves: 1,
+    },
+    {
+      employeeId: "#MAY6452",
+      employee: "Mayank",
+      approvedLeaves: 3,
+      rejectedLeaves: 0,
+      pendingLeaves: 0,
+    },
+    {
+      employeeId: "#RIT5673",
+      employee: "Ritika Sharma",
+      approvedLeaves: 2,
+      rejectedLeaves: 1,
+      pendingLeaves: 0,
+    },
+    {
+      employeeId: "#NEH9874",
+      employee: "Neha Gupta",
+      approvedLeaves: 1,
+      rejectedLeaves: 2,
+      pendingLeaves: 0,
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.fullWidthContainer}>
@@ -24,7 +62,6 @@ export default function Leave() {
         <div className={styles.dateFilter}>
           <div className={styles.field}>
             <label>Frequency</label>
-
             <div className={styles.radioGroup}>
               <input
                 type="radio"
@@ -56,11 +93,10 @@ export default function Leave() {
               </div>
             </div>
           )}
-
-          {typeMonth || (
+          {!typeMonth && (
             <div className={styles.field}>
               <label>Year</label>
-              <select>
+              <select defaultValue="2024">
                 <option>2017</option>
                 <option>2018</option>
                 <option>2019</option>
@@ -68,14 +104,13 @@ export default function Leave() {
                 <option>2021</option>
                 <option>2022</option>
                 <option>2023</option>
-                <option selected>2024</option>
+                <option>2024</option>
                 <option>2025</option>
                 <option>2026</option>
                 <option>2027</option>
               </select>
             </div>
           )}
-
           <div className={styles.field}>
             <label>Branch</label>
             <select>
@@ -101,15 +136,6 @@ export default function Leave() {
               <option>Industrials</option>
             </select>
           </div>
-          {/* <div className={styles.field}>
-            <label>Employee</label>
-            <select>
-              <option>Select Employee</option>
-              <option>Gaurav Meena</option>
-              <option>Pankaj Jat</option>
-              <option>Mayank </option>
-            </select>
-          </div> */}
           <button className={styles.searchButton}>
             <FaSearch />
           </button>
@@ -134,25 +160,24 @@ export default function Leave() {
       </div>
       <div className={styles.verticalContainer}>
         <div className={styles.item}>
-          <pre>Approved Leaves </pre>
+          <pre>Approved Leaves : </pre>
           <p>
-            <b> 1</b>
+            <b>6</b>
           </p>
         </div>
         <div className={styles.item}>
-          <pre>Rejected Leaves </pre>
+          <pre>Rejected Leaves : </pre>
           <p>
-            <b> 1</b>
+            <b>4</b>
           </p>
         </div>
         <div className={styles.item}>
-          <pre>Pending Leaves </pre>
+          <pre>Pending Leaves : </pre>
           <p>
-            <b> 0</b>
+            <b>1</b>
           </p>
         </div>
       </div>
-
       <div className={styles.fullWidthContainer}>
         <div className={styles.reportTableContainer}>
           <div className={styles.tableTop}>
@@ -171,79 +196,32 @@ export default function Leave() {
           </div>
           <table className={styles.dashboardTable}>
             <thead>
-              <th>EMPLOYEE ID </th>
-              <th>EMPLOYEE </th>
-              <th>APPROVED LEAVES </th>
-              <th>REJECTED LEAVES </th>
-              <th>PENDING LEAVES </th>
+              <tr>
+                <th>EMPLOYEE ID</th>
+                <th>EMPLOYEE</th>
+                <th>APPROVED LEAVES</th>
+                <th>REJECTED LEAVES</th>
+                <th>PENDING LEAVES</th>
+              </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>
-                  <p className={styles.unpaid}>unpaid</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p className={styles.employeeID}>#GAU7879</p>
-                </td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-                <td>content</td>
-              </tr>
+              {leaveData.map((leave, index) => (
+                <tr key={index}>
+                  <td>
+                    <p className={styles.employeeID}>{leave.employeeId}</p>
+                  </td>
+                  <td>{leave.employee}</td>
+                  <td>{leave.approvedLeaves}</td>
+                  <td>{leave.rejectedLeaves}</td>
+                  <td>{leave.pendingLeaves}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
           <div className={styles.tableBottom}>
-            <p>Showing 1 to 5 of 5 entries</p>
+            <p>
+              Showing 1 to {leaveData.length} of {leaveData.length} entries
+            </p>
           </div>
         </div>
       </div>

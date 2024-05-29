@@ -1,6 +1,6 @@
 .toggleheadingDiv {
   display: flex;
-  gap: 5%;
+  gap: 3%;
   justify-content: left;
   color: #76b0ea;
   padding: 1%;
@@ -17,4 +17,10 @@
   border-radius: 10px;
   /* font-weight: bold; */
   /* border-bottom: 2px solid #000; */
+}
+.inactiveTab {
+  border: 2px solid #76b0ea;
+  padding: 1%;
+  border-radius: 10px;
+
 }
