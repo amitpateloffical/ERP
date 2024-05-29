@@ -25,6 +25,7 @@ import CrmOverview from "./pages/Dashboard/CRM/Overview/CrmOverview";
 import Leads from "./pages/Dashboard/CRM/Reports/Leads/Leads";
 import Deals from "./pages/Dashboard/CRM/Reports/Deals/Deals";
 import Project from "./pages/Dashboard/Project/Project";
+import POSOverview from "./pages/Dashboard/POS/Overview/POSOverview";
 
 function App() {
   return (
@@ -64,8 +65,11 @@ function App() {
             </Route>
           </Route>
           <Route path="project" element={<Project />}></Route>
+          <Route path="pos" element={<Project />}>
+            <Route path="overview" element={<POSOverview />} />
+          </Route>
         </Route>
-        <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
