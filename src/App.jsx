@@ -26,6 +26,11 @@ import Leads from "./pages/Dashboard/CRM/Reports/Leads/Leads";
 import Deals from "./pages/Dashboard/CRM/Reports/Deals/Deals";
 import Project from "./pages/Dashboard/Project/Project";
 import POSOverview from "./pages/Dashboard/POS/Overview/POSOverview";
+import WareHouseReport from "./pages/Dashboard/POS/Reports/WareHouseReport/WareHouseReport";
+import PosVsPurchaseReport from "./pages/Dashboard/POS/Reports/PosVsPurchaseReport/PosVsPurchaseReport";
+import PurchaseReport from "./pages/Dashboard/POS/Reports/PurchaseReport/PurchaseReport";
+import PosReport from "./pages/Dashboard/POS/Reports/PosReport/PosReport";
+import EmployeeSetUp from "./pages/HrmSystem/EmployeeSetUp/EmployeeSetUp";
 
 function App() {
   return (
@@ -64,10 +69,19 @@ function App() {
               <Route path="deal" element={<Deals />} />
             </Route>
           </Route>
-          <Route path="project" element={<Project />}></Route>
-          <Route path="pos" element={<Project />}>
+          <Route path="project" element={<Project />} />
+          <Route path="pos">
             <Route path="overview" element={<POSOverview />} />
+            <Route path="reports">
+              <Route path="warehouse-report" element={<WareHouseReport />} />
+              <Route path="purchase-daily-monthly-report" element={<PurchaseReport />} />
+              <Route path="pos-daily-monthly-report" element={<PosReport />} />
+              <Route path="pos-vs-purchase-report" element={<PosVsPurchaseReport />} />
+            </Route>
           </Route>
+        </Route>
+        <Route path="/hrm-system" element={<Layout />}>
+          <Route path="employee-setup" element={<EmployeeSetUp />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
