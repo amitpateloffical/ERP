@@ -3,8 +3,17 @@ import DateFilter from "../../../../../Components/Datefilter/Datefilter";
 import styles from "../Reports.module.css";
 import LineChart from "../../../../../Components/Charts/Linechart";
 import IncomeLineChart from "../../../../../Components/Charts/IncomeLineChart";
+import ApexAreaChart from "../../../../../Components/Charts/ApexAreaChart";
 // import styles from "./AccountStatement.module.css";
 export default function WareHouseReport() {
+  const data = [
+    {
+      name: "Product",
+      data: [100, 110, 120, 110, 115],
+    },
+  ];
+
+  const labels = ["Warehouse 1", "Warehouse 2", "Warehouse 3", "Warehouse 4", "Warehouse 5"];
   return (
     <div className={styles.container}>
       <div className={styles.fullWidthContainer}>
@@ -14,135 +23,34 @@ export default function WareHouseReport() {
         <div className={styles.item}>
           <pre>Report : </pre>
           <p>
-            <b>Income Summary</b>
+            <b> Warehouse Report</b>
           </p>
         </div>
         <div className={styles.item}>
-          <pre>Duration : </pre>
+          <pre>Total Warehouse : </pre>
           <p>
-            <b>Dec-2023 to May-2024</b>
+            <b>4</b>
+          </p>
+        </div>
+        <div className={styles.item}>
+          <pre>Total Product : </pre>
+          <p>
+            <b>20</b>
           </p>
         </div>
       </div>
 
       <div className={styles.fullWidthContainer}>
-        <IncomeLineChart />
-      </div>
-      <div className={styles.reportTableContainer}>
-        <h5>Income</h5>
-        <table className={styles.dashboardTable}>
-          <thead>
-            <tr>
-              <th>CATEGORY</th>
-              <th> JANUARY</th>
-              <th> FEBRUARY</th>
-              <th> MARCH </th>
-              <th> APRIL</th>
-              <th> MAY </th>
-              <th>JUNE </th>
-              <th>JULY </th>
-              <th>AUGUST </th>
-              <th>SEPTEMBER </th>
-              <th>OCTOBER </th>
-              <th>NOVEMBER </th>
-              <th>DECEMBER </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colSpan="13">
-                <b>Revenue :</b>
-              </td>
-            </tr>
-            <tr>
-              <td>Maintenance Sales</td>
-              <td>$ 216.600,00</td>
-              <td>$ 0,00</td>
-              <td>$ 0,00 </td>
-              <td>$ 0,00 </td>
-              <td>$ 103.500,00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-            </tr>
-            <tr>
-              <td>Product Sales</td>
-              <td>$ 8.025,00</td>
-              <td>$ 0,00</td>
-              <td>$ 0,00 </td>
-              <td>$ 0,00 </td>
-              <td>$ 4.03 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-            </tr>
-            <tr>
-              <td colSpan="13">
-                <b>Invoice :</b>
-              </td>
-            </tr>
-            <tr>
-              <td>Maintenance Sales</td>
-              <td>$ 216.600,00</td>
-              <td>$ 0,00</td>
-              <td>$ 0,00 </td>
-              <td>$ 0,00 </td>
-              <td>$ 103.500,00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-            </tr>
-            <tr>
-              <td>Product Sales</td>
-              <td>$ 8.025,00</td>
-              <td>$ 0,00</td>
-              <td>$ 0,00 </td>
-              <td>$ 0,00 </td>
-              <td>$ 4.03 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-            </tr>
-            <tr>
-              <td colSpan="13">
-                <b>Total Income = Revenue + Invoice</b>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <b>Total</b>
-              </td>
-              <td> $ 240.225,00</td>
-              <td>$ 0,00</td>
-              <td>$ 0,00 </td>
-              <td>$ 0,00 </td>
-              <td>$ 104.300,00</td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-              <td>$ 0.00 </td>
-            </tr>
-          </tbody>
-        </table>
+        <h5>Warehouse Report</h5>
+        <ApexAreaChart
+          height="400"
+          colors={["#77B6EA", "#545454"]}
+          data={data}
+          labels={labels}
+          chartTitle="Cashflow Analysis"
+          xAxisTitle="Warehouse"
+          yAxisTitle=""
+        />
       </div>
     </div>
   );

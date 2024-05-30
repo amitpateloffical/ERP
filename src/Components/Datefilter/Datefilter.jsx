@@ -1,18 +1,18 @@
 // src/DateFilter.js
 
 import React, { useEffect, useState } from "react";
-import {  FaSearch, FaTimes } from "react-icons/fa";
+import { FaSearch, FaTimes } from "react-icons/fa";
 import styles from "./DateFilter.module.css";
 
 const DateFilter = () => {
-      const [currentMonth, setCurrentMonth] = useState("");
+  const [currentMonth, setCurrentMonth] = useState("");
 
-      useEffect(() => {
-        const now = new Date();
-        const year = now.getFullYear();
-        const month = (now.getMonth() + 1).toString().padStart(2, "0");
-        setCurrentMonth(`${year}-${month}`);
-      }, []);
+  useEffect(() => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = (now.getMonth() + 1).toString().padStart(2, "0");
+    setCurrentMonth(`${year}-${month}`);
+  }, []);
   return (
     <div className={styles.dateFilter}>
       <div className={styles.field}>

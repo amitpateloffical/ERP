@@ -160,7 +160,7 @@ const Dashboard = () => {
       <div className={styles.rightColumn}>
         <h5>Cashflow Chart</h5>
         <div className={styles.lineChartDiv}>
-          <LineChart />
+          <LineChart height={280} />
         </div>
       </div>
       <div className={styles.leftColumn}>

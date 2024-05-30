@@ -3,7 +3,7 @@
   import ReactApexChart from "react-apexcharts";
   import { chartData } from "./chartdata";
 
-  const LineChart = () => {
+  const LineChart = ({height}) => {
     const options = {
       chart: {
         id: "area-chart",
@@ -56,7 +56,7 @@
       },
     ];
 
-    return <ReactApexChart options={options} series={series} type="area" height={280} />;
+    return <ReactApexChart options={options} series={series} type="area" height={height} />;
   };
 
   export default LineChart;
