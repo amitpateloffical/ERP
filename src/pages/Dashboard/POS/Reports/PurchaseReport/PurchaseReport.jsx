@@ -18,13 +18,37 @@ export default function PurchaseReport() {
   }, []);
   const data = [
     {
-      name: "Product",
-      data: [100, 110, 120, 110, 115],
+      name: "Purchase",
+      data: [100, 110, 120, 110, 115, 100, 110, 120, 110, 115],
     },
   ];
 
-  const labels = ["Warehouse 1", "Warehouse 2", "Warehouse 3", "Warehouse 4", "Warehouse 5"];
+  const labels = [
+    "01 Jan",
+    "02 Jan",
+    "03 Jan",
+    "04 Jan",
+    "05 Jan",
+    "06 Jan",
+    "07 Jan",
+    "08 Jan",
+    "09 Jan",
+  ];
 
+  const labels2 = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   const dailyTabContent = (
     <>
       <div className={styles.fullWidthContainer}>
@@ -90,7 +114,7 @@ export default function PurchaseReport() {
       </div>
 
       <div className={styles.fullWidthContainer}>
-        <h5>Warehouse Report</h5>
+        <h5>Daily Report</h5>
         <ApexAreaChart
           height="400"
           colors={["#77B6EA", "#545454"]}
@@ -108,18 +132,20 @@ export default function PurchaseReport() {
       <div className={styles.fullWidthContainer}>
         <div className={styles.dateFilter}>
           <div className={styles.field}>
-            <label>Start Month</label>
-            <div className={styles.inputContainer}>
-              <input type="month" defaultValue={currentMonth} />
-              {/* <FaCalendarAlt className={styles.icon} /> */}
-            </div>
-          </div>
-          <div className={styles.field}>
-            <label>End Month</label>
-            <div className={styles.inputContainer}>
-              <input type="month" defaultValue={currentMonth} />
-              {/* <FaCalendarAlt className={styles.icon} /> */}
-            </div>
+            <label>Year</label>
+            <select defaultValue="2024">
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+            </select>
           </div>
           <div className={styles.field}>
             <label>Warehouse</label>
@@ -150,7 +176,7 @@ export default function PurchaseReport() {
         <div className={styles.item}>
           <pre>Report : </pre>
           <p>
-            <b> Warehouse Report</b>
+            <b> Monthly Purchase Report</b>
           </p>
         </div>
         <div className={styles.item}>
@@ -168,12 +194,12 @@ export default function PurchaseReport() {
       </div>
 
       <div className={styles.fullWidthContainer}>
-        <h5>Warehouse Report</h5>
+        <h5>Monthly Report</h5>
         <ApexAreaChart
           height="400"
           colors={["#77B6EA", "#545454"]}
           data={data}
-          labels={labels}
+          labels={labels2}
           chartTitle="Cashflow Analysis"
           xAxisTitle="Warehouse"
           yAxisTitle=""

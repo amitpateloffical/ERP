@@ -1,0 +1,68 @@
+.taskCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new {
+  background-color: #00bcd4;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.win {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.onhold {
+  background-color: #ffeb3b;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.pending {
+  background-color: #ff9800;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.loss {
+  background-color: #f44336;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart, .network {
+  margin-right: 5px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}

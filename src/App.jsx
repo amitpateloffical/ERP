@@ -31,6 +31,8 @@ import PosVsPurchaseReport from "./pages/Dashboard/POS/Reports/PosVsPurchaseRepo
 import PurchaseReport from "./pages/Dashboard/POS/Reports/PurchaseReport/PurchaseReport";
 import PosReport from "./pages/Dashboard/POS/Reports/PosReport/PosReport";
 import EmployeeSetUp from "./pages/HrmSystem/EmployeeSetUp/EmployeeSetUp";
+import CRMLeads from "./pages/CRMSystem/Leads/Leads";
+import KanbanBoard from "./Components/Kanban/KanbanBoard";
 
 function App() {
   return (
@@ -82,6 +84,10 @@ function App() {
         </Route>
         <Route path="/hrm-system" element={<Layout />}>
           <Route path="employee-setup" element={<EmployeeSetUp />} />
+        </Route>
+        <Route path="crm-system" element={<Layout />}>
+          {/* <Route path="leads" element={<CRMLeads />} /> */}
+          <Route path="leads" element={<KanbanBoard />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
