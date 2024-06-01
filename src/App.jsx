@@ -33,6 +33,11 @@ import PosReport from "./pages/Dashboard/POS/Reports/PosReport/PosReport";
 import EmployeeSetUp from "./pages/HrmSystem/EmployeeSetUp/EmployeeSetUp";
 import CRMLeads from "./pages/CRMSystem/Leads/Leads";
 import KanbanBoard from "./Components/Kanban/KanbanBoard";
+import SetSalary from "./pages/HrmSystem/PayrollSetup/SetSalary/SetSalary";
+import PaySlip from "./pages/HrmSystem/PayrollSetup/PaySlip/PaySlip";
+import ManageLeave from "./pages/HrmSystem/LeaveManagement/ManageLeave/ManageLeave";
+import BulkAttendance from "./pages/HrmSystem/LeaveManagement/Attendance/BulkAttendance/BulkAttendance";
+import MarkAttendance from "./pages/HrmSystem/LeaveManagement/Attendance/MarkAttendance/MarkAttendance";
 
 function App() {
   return (
@@ -84,6 +89,17 @@ function App() {
         </Route>
         <Route path="/hrm-system" element={<Layout />}>
           <Route path="employee-setup" element={<EmployeeSetUp />} />
+          <Route path="payroll-setup">
+            <Route path="set-salary" element={<SetSalary />} />
+            <Route path="payslip" element={<PaySlip />} />
+          </Route>
+          <Route path="leave-management-setup">
+            <Route path="manage-leave" element={<ManageLeave />} />
+            <Route path="attendance">
+              <Route path="mark-attendance" element={<MarkAttendance />} />
+              <Route path="bulk-attendance" element={<BulkAttendance />} />
+            </Route>
+          </Route>
         </Route>
         <Route path="crm-system" element={<Layout />}>
           {/* <Route path="leads" element={<CRMLeads />} /> */}
