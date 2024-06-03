@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Transfer() {
+export default function AccountTransfer() {
   return (
     <div>
       

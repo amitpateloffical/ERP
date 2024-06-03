@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PrintSettings() {
+export default function Contract() {
   return (
     <div>
       

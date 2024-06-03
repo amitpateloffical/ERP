@@ -230,3 +230,45 @@
   border-radius: 15px;
   color: white;
 }
+
+
+
+
+
+
+
+
+/* Progress bar */
+
+.status {
+  margin-bottom: 20px;
+  /* width: 50%; */
+  /* padding: 2%; */
+}
+
+.label,
+.percentage {
+  display: inline-block;
+  width: 100%;
+  font-size: 1em;
+  color: #333;
+}
+
+.percentage {
+  font-weight: bold;
+  color: #33cc33;
+  margin-bottom: 5px;
+}
+
+.progressBar {
+  background: #e6e6e6; 
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  width: 100%;
+}
+
+.progress {
+  background: #33cc33; /* green color */
+  height: 10px;
+}
