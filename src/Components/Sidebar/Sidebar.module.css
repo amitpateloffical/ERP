@@ -8,6 +8,7 @@
   height: 99vh;
   overflow-y: scroll;
   position: fixed;
+  /* padding-right: 0; */
 }
 
 /* Scrollbar track */

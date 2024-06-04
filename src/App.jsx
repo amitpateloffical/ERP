@@ -189,7 +189,7 @@ function App() {
             <Route path="jobs-create" element={<JobCreate />} />
             <Route path="job-application" element={<JobApplication />} />
             <Route path="job-candidate" element={<JobCandidate />} />
-            <Route path="job-on-boarding" element={<JobOnBoarding />} />
+            <Route path="job-onboarding" element={<JobOnBoarding />} />
             <Route path="custom-question" element={<CustomQuestion />} />
             <Route path="interview-schedule" element={<InterviewSchedule />} />
             <Route path="career" element={<Career />} />

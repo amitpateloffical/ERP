@@ -1,0 +1,134 @@
+/* src/DateFilter.module.css */
+
+.dateFilter {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  padding: 5px;
+  font-size: 14px;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  color: #999;
+}
+
+.searchButton,
+.clearButton {
+  width: 40px; /* Increase button size */
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Increase icon size */
+  color: white;
+}
+
+.searchButton {
+  background-color: #00cc44;
+}
+
+.clearButton {
+  background-color: #ff6666;
+}
+
+/* main */
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fullWidthContainer {
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding for content */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2%;
+}
+
+.textGreen {
+  /* color: purple; */
+  color: green;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.verticalContainer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  width: 100%;
+  gap: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  overflow-x: scroll;
+  padding: 3%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: white;
+  text-align: center;
+  /* width: 100%; */
+  min-width: 350px;
+  height: 400px;
+}
+.cardTop {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardTop span {
+    background-color: #00cc44;
+    padding: 3%;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+

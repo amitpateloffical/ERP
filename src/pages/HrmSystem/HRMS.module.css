@@ -272,3 +272,67 @@
   background: #33cc33; /* green color */
   height: 10px;
 }
+
+.verticalContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  /* background-color: #ccc;     */
+}
+.cardLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 5%;
+  width: 70%;
+}
+.icon2 {
+  font-size: 32px;
+  color: whitesmoke;
+}
+
+
+.value {
+  font-size: 28px;
+  font-weight: bold;
+}
+.contentLeft {
+  text-align: left;
+}
+.contentLeft p {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.contentLeft pre {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.textPurple {
+  color: #c06bd6;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.textOrange {
+  /* color: purple; */
+  color: #e06c28;
+  font-size: 1.3rem;
+  margin: 0;
+}
