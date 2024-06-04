@@ -247,7 +247,7 @@ function App() {
           <Route path="print-settings" element={<PrintSettings />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="crm-system" e  lement={<Layout />}>
+        <Route path="crm-system" element={<Layout />}>
           {/* <Route path="leads" element={<CRMLeads />} /> */}
           <Route path="leads" element={<KanbanBoard />} />
           <Route path="deals" element={<CRMDeals />} />
