@@ -56,10 +56,9 @@ export default function JobCandidate() {
 
   return (
     <>
-      {" "}
       <div className={styles.container}>
         <div className={styles.fullWidthContainer}>
-          <h2 className={styles.textGreen}>Manage Archive Application</h2>
+          <h2 className={styles.textGreen}>Manage Job Candidate</h2>
         </div>
         <div className={styles.fullWidthContainer}>
           <div className={styles.reportTableContainer}>
@@ -80,7 +79,7 @@ export default function JobCandidate() {
             <table className={styles.dashboardTable}>
               <thead>
                 <tr>
-                  <th>NAME ACTION</th>
+                  <th>NAME</th>
                   <th>APPLIED FOR</th>
                   <th>RATING     </th>
                   <th>APPLIED AT </th>

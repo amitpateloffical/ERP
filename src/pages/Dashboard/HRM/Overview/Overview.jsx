@@ -27,7 +27,11 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import { format, parse, startOfWeek, getDay } from "date-fns";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import enUS from "date-fns/locale/en-US";
-
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import listPlugin from "@fullcalendar/list";
+import interactionPlugin from "@fullcalendar/interaction";
 const Dashboard = () => {
   const InvoiceWeeklyContent = (
     <div style={{ marginTop: "0%" }}>
@@ -131,13 +135,37 @@ const Dashboard = () => {
         <CardComponent />
       </div>
       <div className={styles.CalContainer}>
-        <Calendar
+        {/* <Calendar
           localizer={localizer}
           events={events}
           startAccessor="start"
           endAccessor="end"
           style={{ height: 500 }}
-        />
+        /> */}
+          <FullCalendar
+            plugins={[dayGridPlugin, timeGridPlugin, listPlugin, interactionPlugin]}
+            initialView="dayGridMonth"
+            headerToolbar={{
+              left: "prev,next today",
+              center: "title",
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+            }}
+            events={[
+              // { title: "All Day Event", date: "2024-06-01" },
+              // { title: "Long Event", start: "2024-06-07", end: "2024-06-10" },
+              // { title: "Conference", start: "2024-06-03", end: "2024-06-05" },
+              // { title: "Meeting", date: "2024-06-04T10:30:00" },
+              // { title: "Lunch", date: "2024-06-04T12:00:00" },
+              // { title: "Birthday Party", date: "2024-06-04T07:00:00" },
+              {
+                title: "Click for Google",
+                url: "http://google.com/",
+                date: "2024-06-28",
+              },
+            ]}
+            height="auto"
+            contentHeight="auto"
+          />
       </div>
 
       <div className={styles.rightDiv}>

@@ -196,7 +196,7 @@ function App() {
           </Route>
           <Route path="hr-admin-setup">
             <Route path="award" element={<Award />} />
-            <Route path="transfer-" element={<Transfer />} />
+            <Route path="transfer" element={<Transfer />} />
             <Route path="resignation" element={<Resignation />} />
             <Route path="trip" element={<Trip />} />
             <Route path="promotion" element={<Promotion />} />
