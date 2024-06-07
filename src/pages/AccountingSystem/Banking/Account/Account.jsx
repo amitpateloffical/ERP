@@ -3,8 +3,6 @@ import styles from "../../AccountingSystem.module.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { IconButton, Tooltip } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
-import DownloadIcon from "@mui/icons-material/Download";
-import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import { FaSearch, FaTimes } from "react-icons/fa";
 export default function Account() {
   const reportData = [
@@ -55,50 +53,6 @@ export default function Account() {
           <h2 class={styles.textGreen}>Manage Bank Account</h2>
         </div>
         <div class={styles.fullWidthContainer}>
-          <div className={styles.dateFilter}>
-            <div className={styles.field}>
-              <label>From</label>
-              <input type="date" name="" id="" />
-            </div>
-            <div className={styles.field}>
-              <label>To</label>
-              <input type="date" name="" id="" />
-            </div>
-            <div className={styles.field}>
-              <label>From Account</label>
-              <select>
-                <option>Select Account</option>
-                <option>India</option>
-                <option>China</option>
-                <option>Jordan</option>
-                <option>USA</option>
-                <option>Australia</option>
-                <option>United Kingdom</option>
-              </select>
-            </div>
-            <div className={styles.field}>
-              <label>To Account</label>
-              <select>
-                <option>Select Account</option>
-                <option>Financials</option>
-                <option>Industrials</option>
-                <option>Health Care</option>
-                <option>Telecommunications</option>
-                <option>Health Care</option>
-                <option>Financials</option>
-                <option>Industrials</option>
-              </select>
-            </div>
-
-            <button className={styles.searchButton}>
-              <FaSearch />
-            </button>
-            <button className={styles.clearButton}>
-              <FaTimes />
-            </button>
-          </div>{" "}
-        </div>
-        <div class={styles.fullWidthContainer}>
           <div class={styles.reportTableContainer}>
             <div class={styles.tableTop}>
               <div class={styles.tableTopleft}>
@@ -117,12 +71,13 @@ export default function Account() {
             <table class={styles.dashboardTable}>
               <thead>
                 <tr>
-                  <th>DATE </th>
-                  <th>FROM ACCOUNT</th>
-                  <th>TO ACCOUNT</th>
-                  <th>AMOUNT</th>
-                  <th>REFERENCE</th>
-                  <th>DESCRIPTION</th>
+                  <th>CHART OF ACCOUNT</th>
+                  <th>NAME</th>
+                  <th>BANK</th>
+                  <th>ACCOUNT NUMBER</th>
+                  <th>CURRENT BALANCE</th>
+                  <th>CONTACT NUMBER</th>
+                  <th>BANK BRANCH</th>
                   <th>ACTION</th>
                 </tr>
               </thead>

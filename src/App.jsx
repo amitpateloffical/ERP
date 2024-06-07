@@ -281,7 +281,6 @@ function App() {
           <Route path="print-settings" element={<PrintSettings2 />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

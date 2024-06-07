@@ -25,6 +25,8 @@
     "bootstrap-icons": "^1.11.3",
     "date-fns": "^3.6.0",
     "fullcalendar": "^6.1.14",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-big-calendar": "^1.12.2",
@@ -34,7 +36,8 @@
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

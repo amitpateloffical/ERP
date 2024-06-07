@@ -11,10 +11,29 @@ import TableContent from "../../../Components/TableContent/TableContent.jsx";
 
 export default function HRMSystemSetUp() {
   const [activeTab, setActiveTab] = useState("Branch");
-
+  const tabData = [
+    { name: "Branch", key: "Branch" },
+    { name: "Department", key: "Department" },
+    { name: "Designation", key: "Designation" },
+    { name: "Leave Type", key: "LeaveType" },
+    { name: "Document Type", key: "DocumentType" },
+    { name: "PaySlip Type", key: "PaySlipType" },
+    { name: "Allowance Option", key: "AllowanceOption" },
+    { name: "Loan Option", key: "LoanOption" },
+    { name: "Deduction Option", key: "DeductionOption" },
+    { name: "Goal Type", key: "GoalType" },
+    { name: "Training Type", key: "TrainingType" },
+    { name: "Award Type", key: "AwardType" },
+    { name: "Termination Type", key: "TerminationType" },
+    { name: "Job Category", key: "JobCategory" },
+    { name: "Job Stage", key: "JobStage" },
+    { name: "Performance Type", key: "PerformanceType" },
+    { name: "Competencies", key: "Competencies" },
+  ];
   const renderContent = () => {
     const content = data[activeTab];
     if (content) {
+      // if(content==="Unit")return <TableContent />;
       return <TableContent title={content.title} columns={content.columns} data={content.data} />;
     }
     return <div>Select a tab to view content</div>;
@@ -24,7 +43,7 @@ export default function HRMSystemSetUp() {
       <div className={styles.container}>
         <div className={style.upperContainer}>
           <div className={style.sidebar}>
-            <TabSidebar onTabChange={setActiveTab} />
+            <TabSidebar onTabChange={setActiveTab} tabData={tabData} />
           </div>
           <div className={style.contentBar}>{renderContent()}</div>
         </div>
@@ -124,42 +143,6 @@ export default function HRMSystemSetUp() {
 //   );
 // }
 
- 
- 
- 
- 
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const renderContent = () => {
 //   switch (activeTab) {
 //     case "Branch":
@@ -184,24 +167,6 @@ export default function HRMSystemSetUp() {
 //       return <AllowanceOptionContent />;
 //     case "Loan Option":
 //       return <LoanOptionContent />;
-//     case "Deduction Option":
-//       return <DeductionOptionContent />;
-//     case "Goal Type":
-//       return <GoalTypeContent />;
-//     case "Training Type":
-//       return <TrainingTypeContent />;
-//     case "Award Type":
-//       return <AwardTypeContent />;
-//     case "Termination Type":
-//       return <TerminationTypeContent />;
-//     case "Job Category":
-//       return <DesignationContent />;
-//     case "Job Stage":
-//       return <DesignationContent />;
-//     case "Performance Type":
-//       return <DesignationContent />;
-//     case "Competencies":
-//       return <DesignationContent />;
 //     default:
 //       return <div>Select a tab to view content</div>;
 //   }
