@@ -1,0 +1,55 @@
+.balanceSheetContainer {
+  width: 60%;
+  /* height: 90vh; */
+  margin-left: 20%;
+  margin-top: 3%;
+  padding: 3%;
+  /* border:2px double black */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.thDiv {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.reportTh {
+  display: flex;
+  justify-content: space-between;
+}
+.dollarSigntd {
+  color: green;
+}
+.listHead {
+  padding-left: 4%;
+  font-weight: 700;
+  /* font-family: monospace; */
+  text-decoration: underline;
+}
+.subhead {
+  font-weight: 500;
+}
+.paddingsubhead {
+  padding-left: 6%;
+}
+
+.tophead {
+  padding-left: 2%;
+  font-weight: 700;
+  display: block;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-top: 1%;
+  border-left: none;
+  font-size: 1.2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  background-color: antiquewhite;
+}
+.tophead p{
+margin: 0;
+padding-right: 13%;
+}
