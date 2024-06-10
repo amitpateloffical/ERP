@@ -1,6 +1,7 @@
 import React from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import styles from "../style.module.css";
 
 const PdfExport = ({ contentId, fileName }) => {
   const generatePDF = () => {
@@ -15,7 +16,11 @@ const PdfExport = ({ contentId, fileName }) => {
     });
   };
 
-  return <button onClick={generatePDF}>Export to PDF</button>;
+  return (
+    <button className={styles.buttonStyle} onClick={generatePDF}>
+      Download PDF
+    </button>
+  );
 };
 
 export default PdfExport;

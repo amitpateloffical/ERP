@@ -1,45 +1,145 @@
 import React from "react";
 import styles from "../../AccountingSystem.module.css";
 import style from "./BalanceSheet.module.css";
+import ExcelExport from "../../../../Components/Exports/Excel/ExcelExport";
+import PdfExport from "../../../../Components/Exports/Pdf/PdfExport";
 export default function BalanceSheet() {
-  const transactions = [
+  const balanceSheet = [
     {
-      invoiceID: "INV001",
-      vendor: "ABC Supplies",
-      date: "2024-01-15",
-      amount: 250.0,
-      description: "Purchased office chairs",
+      category: "Assets",
+      account: "Checking Account",
+      code: "1060",
+      debit: "$280.00",
+      credit: "$0.00",
     },
     {
-      invoiceID: "INV002",
-      vendor: "XYZ Technologies",
-      date: "2024-01-20",
-      amount: 150.0,
-      description: "Annual software subscription",
+      category: "Assets",
+      account: "Transaction Account",
+      code: "1044",
+      debit: "$650.00",
+      credit: "$0.00",
     },
     {
-      invoiceID: "INV003",
-      vendor: "123 Electronics",
-      date: "2024-02-10",
-      amount: 500.0,
-      description: "Computer hardware purchase",
+      category: "Assets",
+      account: "Petty Cash",
+      code: "1065",
+      debit: "$0.00",
+      credit: "$91,444.00",
     },
     {
-      invoiceID: "INV004",
-      vendor: "Best Books Store",
-      date: "2024-02-28",
-      amount: 120.0,
-      description: "Educational books purchase",
+      category: "Assets",
+      account: "Account Receivables",
+      code: "1200",
+      debit: "$0.00",
+      credit: "$8,125.00",
+    },
+    {
+      category: "Assets",
+      account: "Allowance for doubtful accounts",
+      code: "1205",
+      debit: "$0.00",
+      credit: "$1,905.00",
+    },
+    {
+      category: "Assets",
+      account: "Inventory",
+      code: "1510",
+      debit: "$0.00",
+      credit: "$1,550.00",
+    },
+    {
+      category: "Assets",
+      account: "Stock of Raw Materials",
+      code: "1520",
+      debit: "$0.00",
+      credit: "$100.00",
+    },
+    {
+      category: "Assets",
+      account: "Stock of Work In Progress",
+      code: "1530",
+      debit: "$0.00",
+      credit: "$100.00",
+    },
+    {
+      category: "Assets",
+      account: "Land and Buildings",
+      code: "1810",
+      debit: "$0.00",
+      credit: "$150.00",
+    },
+    {
+      category: "Liabilities",
+      account: "Account Payable",
+      code: "2100",
+      debit: "$0.00",
+      credit: "$60.00",
+    },
+    {
+      category: "Liabilities",
+      account: "Deferred Income",
+      code: "2105",
+      debit: "$0.00",
+      credit: "$190.00",
+    },
+    {
+      category: "Liabilities",
+      account: "Accrued Franchise Tax",
+      code: "2130",
+      debit: "$0.00",
+      credit: "$650.00",
+    },
+    {
+      category: "Liabilities",
+      account: "Vat Provision",
+      code: "2140",
+      debit: "$1,500.00",
+      credit: "$0.00",
+    },
+    {
+      category: "Liabilities",
+      account: "Purchase Tax",
+      code: "2145",
+      debit: "$0.00",
+      credit: "$140.00",
+    },
+    {
+      category: "Liabilities",
+      account: "Accrued Holiday Pay",
+      code: "2230",
+      debit: "$0.00",
+      credit: "$140.00",
+    },
+    {
+      category: "Equity",
+      account: "Common Shares",
+      code: "3350",
+      debit: "$0.00",
+      credit: "$0.00",
+    },
+    {
+      category: "Equity",
+      account: "Preferred Shares",
+      code: "1089",
+      debit: "$0.00",
+      credit: "$100.00",
     },
   ];
+
 
   return (
     <>
       <div className={styles.container}>
         <div className={styles.fullWidthContainer}>
-          <h2 className={styles.textGreen}>Balance Sheet</h2>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <h2 className={styles.textGreen}>Balance Sheet </h2>
+            <div style={{ display: "flex", justifyContent: "space-around", minWidth: "40%" }}>
+              <PdfExport contentId="balance-sheet-summary" fileName="balance-sheet-summary.pdf" />
+              <ExcelExport data={balanceSheet} fileName="balance-sheet-summary.xlsx" />
+            </div>
+          </div>
         </div>
-        <div className={style.balanceSheetContainer}>
+        <div className={style.balanceSheetContainer} id="balance-sheet-summary">
           <h4 style={{ textAlign: "center", marginBottom: "5%" }}>
             Balance Sheet of Workdo as of 2024-01-01 to 2024-06-09
           </h4>

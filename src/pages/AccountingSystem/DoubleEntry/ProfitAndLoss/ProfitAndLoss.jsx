@@ -1,46 +1,97 @@
 import React from "react";
 import styles from "../../AccountingSystem.module.css";
 import style from "./ProfitAndLoss.module.css";
+import PdfExport from "../../../../Components/Exports/Pdf/PdfExport";
+import ExcelExport from "../../../../Components/Exports/Excel/ExcelExport";
 export default function ProfitAndLoss() {
-  const transactions = [
+  const profitAndLoss = [
     {
-      invoiceID: "INV001",
-      vendor: "ABC Supplies",
-      date: "2024-01-15",
-      amount: 250.0,
-      description: "Purchased office chairs",
+      category: "Income",
+      account: "Sales Income",
+      code: "",
+      total: "$328,300.00",
     },
     {
-      invoiceID: "INV002",
-      vendor: "XYZ Technologies",
-      date: "2024-01-20",
-      amount: 150.0,
-      description: "Annual software subscription",
+      category: "Income",
+      account: "Service Income",
+      code: "4020",
+      total: "$3,450.00",
     },
     {
-      invoiceID: "INV003",
-      vendor: "123 Electronics",
-      date: "2024-02-10",
-      amount: 500.0,
-      description: "Computer hardware purchase",
+      category: "Income",
+      account: "Sundry Income",
+      code: "4435",
+      total: "$9,975.00",
     },
     {
-      invoiceID: "INV004",
-      vendor: "Best Books Store",
-      date: "2024-02-28",
-      amount: 120.0,
-      description: "Educational books purchase",
+      category: "Income",
+      account: "Total Income",
+      code: "",
+      total: "$13,425.00",
     },
-    // Add more transactions as needed
+    {
+      category: "Cost of Goods Sold",
+      account: "Cost of Sales- On Services",
+      code: "5005",
+      total: "$219,600.00",
+    },
+    {
+      category: "Cost of Goods Sold",
+      account: "Operating Costs",
+      code: "5015",
+      total: "$7,030.00",
+    },
+    {
+      category: "Cost of Goods Sold",
+      account: "Material Usage Variance",
+      code: "5020",
+      total: "$8,000.00",
+    },
+    {
+      category: "Cost of Goods Sold",
+      account: "Total Cost of Goods Sold",
+      code: "",
+      total: "$234,630.00",
+    },
+    {
+      category: "Expenses",
+      account: "Salaries and Wages",
+      code: "5410",
+      total: "$100.00",
+    },
+    {
+      category: "Expenses",
+      account: "Repairs and Maintenance",
+      code: "5765",
+      total: "$2,000.00",
+    },
+    {
+      category: "Expenses",
+      account: "Total Expenses",
+      code: "",
+      total: "$2,100.00",
+    },
+    {
+      category: "Net Profit/Loss",
+      account: "",
+      code: "",
+      total: "$0.00",
+    },
   ];
 
   return (
     <>
       <div className={styles.container}>
         <div className={styles.fullWidthContainer}>
-          <h2 className={styles.textGreen}>Profit & Loss</h2>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <h2 className={styles.textGreen}>Profit & Loss </h2>
+            <div style={{ display: "flex", justifyContent: "space-around", minWidth: "40%" }}>
+              <PdfExport contentId="profit-loss-summary" fileName="profit-loss-summary.pdf" />
+              <ExcelExport data={profitAndLoss} fileName="profit-loss-summary.xlsx" />
+            </div>
+          </div>
         </div>
-        <div className={style.balanceSheetContainer}>
+        <div className={style.balanceSheetContainer} id="profit-loss-summary">
           <h4 style={{ textAlign: "center", marginBottom: "5%" }}>
             Profit & Loss of Workdo as of 2024-01-01 to 2024-06-09
           </h4>
