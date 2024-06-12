@@ -11,7 +11,7 @@ const ApexAreaChart = ({ height, colors, data, labels, chartTitle, xAxisTitle, y
       },
     },
     xaxis: {
-      categories: labels.reverse(), // Reversing the labels for correct order
+      categories: labels.reverse(), 
       title: {
         text: xAxisTitle,
       },

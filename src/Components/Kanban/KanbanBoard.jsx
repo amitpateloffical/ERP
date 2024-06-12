@@ -122,10 +122,10 @@ const initialData = {
 };
 
 const KanbanBoard = () => {
+  const [data, setData] = useState(initialData);
   // useEffect(()=>{
   //   console.log(data);
   // },[])
-  const [data, setData] = useState(initialData);
 
   const onDragEnd = (result) => {
     if (!result.destination) return;
